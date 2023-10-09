@@ -14,7 +14,7 @@ if (crewStatus === true)
 } else {
    console.log("the crew is not ready")
 }
-
+//computerStatusCode check
 if (computerStatusCode === 200) {
    console.log("Please stand by, Computer is rebooting")
 } else if (computerStatusCode === 400) {
@@ -22,7 +22,7 @@ if (computerStatusCode === 200) {
 } else {
    console.log("ALERT: Computer offline")
 }
-
+//shuttleSpeed check
 if (shuttleSpeed > 17500) {
    console.log("ALERT: Escape Velocity reached")
 } else if (shuttleSpeed < 8000) {
@@ -30,7 +30,7 @@ if (shuttleSpeed > 17500) {
 } else {
    console.log("Stable speed")
 }
-
+//engineIndicatorLight check
 if (engineIndicatorLight === "green") {
    console.log("engines have started");
 } else if (engineIndicatorLight === "green blinking") {
@@ -38,13 +38,13 @@ if (engineIndicatorLight === "green") {
 } else {
    console.log("engines are off");
 }
-
+//commandOverride check
 if (fuelLevel > 20000 && !(engineIndicatorLight !== "red blinking") || commandOverride === true) {
    console.log("Cleared to launch") 
 } else {
    console.log("Launch Scrubbed")
 }
-
+//fuel and engine checks
 if (fuelLevel < 1000 || engineTemperature > 3500 || engineIndicatorLight === "red blinking") {
    console.log("ENGINE FAILURE IMMINENT!")
 } else if (fuelLevel <= 5000 || engineTemperature > 2500) {
