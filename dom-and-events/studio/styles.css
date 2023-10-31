@@ -28,3 +28,7 @@
 .centered {
     text-align: center;
 }
+
+.moveUp {
+    transform: translate(0px, -10px);
+}
