@@ -54,8 +54,8 @@ function movementButtons () {
     const rocket = document.getElementById('rocket');
     const spaceShuttleHeight = document.getElementById("spaceShuttleHeight");
     rocket.style.position = 'absolute';
-    rocket.style.left = '50%';
-    rocket.style.right = '50%';
+    rocket.style.left = '250px';
+    rocket.style.right = '50px';
     rocket.style.bottom = '0%';
     
     up.addEventListener("click", event => {
